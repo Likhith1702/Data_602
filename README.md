@@ -116,11 +116,11 @@ From the ROC curve we can see that the area under that is 0.723881
 
 ## Classification using Decesion Tree Classifier
 Initially, we considered max depth as 1, 10, and 50; and minimum sample split as 0.1, 1 and 10.\
-Fom our initial analysis, we got max depth as 10, and min sample split as 10. While the report stands at Validation score of 75.18% and Test score of 75.24% \
+From our initial analysis, we got max depth as 10, and min sample split as 10. While the report stands at Validation score of 75.18% and Test score of 75.24% \
 Post the initial analysis we see that we got a ma depth of 10 and minimum split of 10\ 
 Seeing the results from the initial analysis we are going with max depth of (5, 10, 15) and min sample split of (1, 10, 15)\
-After secondary seach we get a Max depth of 15 and minimum sample split of 10. Hence printing the same with 15 as max depth and 10 as minimum sample split.  
-From the testing data, with decision tree analysis, we see an accuracy of 79%. From the training data, with decision tree analysis, we see an accuracy of 84%/
+After secondary seach we get a Max depth of 15 and minimum sample split of 10. Hence printing the same with 15 as max depth and 10 as minimum sample split.\  
+From the testing data, with decision tree analysis, we see an accuracy of 79%. From the training data, with decision tree analysis, we see an accuracy of 84%\
 Taking in these values we put ROC curve we can see that the area under it is 0.71379 which seems reasonable. 
 
 ## Classification using K-Nearest Neighbors Classifier
