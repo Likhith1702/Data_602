@@ -99,3 +99,42 @@ Plotted a graph to see the acceptance and denial of paroles that are based of ge
 
 ### 8) Count of approved and denied paroles by year
 Plotted a line graph to see the relation between years and acceptace and denial of parole for the dataset
+
+# Modeling and Classification
+We are going to do Logistic Regression, Decision Tree, K-Nearest Neighbors Classifier and random forest classifier to see the accuracy of our models. 
+
+## Splitting of Dataset to test and train sets for further analysis. 
+The initial cleaned data set is split into test date and train date for analysis. Test data set is used for training the model for review.\
+Since, there is a slight imbalance in the class data, I have done oversampling to negate the imbalance to some extent
+
+## Classification using Logistic Regression
+The following hyperparameters were used: 1, 10, and 50 were used as penalty strengths for grid search.\
+When the hyperparameter C is 10, this model appears to be the most effective for classification.\
+In the initial analysis we see that the we get a Validation score of 74.31% and a Test score: 73.72% to choose the best model we use the c value of 5, 10, 15 so as to determine the neighborhood which we can see at 5 so we are using 5 for our results.\
+From the testing scores, we see that the accuracy of the dataset is 78% while from the training scores, we see that the accuracy of the dataset is 84% \
+From the ROC curve we can see that the area under that is 0.723881
+
+## Classification using Decesion Tree Classifier
+Initially, we considered max depth as 1, 10, and 50; and minimum sample split as 0.1, 1 and 10.\
+Fom our initial analysis, we got max depth as 10, and min sample split as 10. While the report stands at Validation score of 75.18% and Test score of 75.24% \
+Post the initial analysis we see that we got a ma depth of 10 and minimum split of 10\ 
+Seeing the results from the initial analysis we are going with max depth of (5, 10, 15) and min sample split of (1, 10, 15)\
+After secondary seach we get a Max depth of 15 and minimum sample split of 10. Hence printing the same with 15 as max depth and 10 as minimum sample split.  
+From the testing data, with decision tree analysis, we see an accuracy of 79%. From the training data, with decision tree analysis, we see an accuracy of 84%/
+Taking in these values we put ROC curve we can see that the area under it is 0.71379 which seems reasonable. 
+
+## Classification using K-Nearest Neighbors Classifier
+For our initial analysis the hyperparameters used are 1,10,50 as number of neighbors for grid search. \
+This initial model seems to be best for classification when hyperparameter number of neighbors are 50 and we get The accuracy of KNN classifier as 0.79811 for the initial analysis\
+From the initial analysis, we see that this classification is best-suited when hyperparameter numbers are in the neighbourhood of 50. So, in the secondary analysis, we considered (40,50,60).\
+The model seems to be best for classification when hyperparameter number of neighbours are 60 and we get accuracy of KNN classifier as 0.79803\ 
+It seems like KNN is has a comparitively similar accuracy when compared with Logistic and DTC having 79% accuracy \
+Also, the area of curve for KNN has decreased to 71% fom 72% which is not too significant\
+
+## Random Forest Classifier 
+When we use the Random Forest classifier model we see that that the accuracy is at 68% which is comprartivly very less with regards ro logistic regression and Decesion tree. Hence this is not the correct mode that should be used on this data set for our analysis.\
+With the ROC curve we can see that the area under it is 0.6951 which is less compared to other models we have seen above.\
+
+# Conclusion 
+From the above analysis we can see that both Logistic regression and decesion tree classifiers are best suited for our dateset and our target variable.\
+When we compare KNN (K-Nearest neighbour) classifier and Random forest classifier we can see a dip in the accuracy of the model. Eventhough the drop is not huge when it comes to KNN model, there is a significant drop in accuracy when it comes to Random forest classifer. 
