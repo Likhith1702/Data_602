@@ -129,11 +129,11 @@ This initial model seems to be best for classification when hyperparameter numbe
 From the initial analysis, we see that this classification is best-suited when hyperparameter numbers are in the neighbourhood of 50. So, in the secondary analysis, we considered (40,50,60).\
 The model seems to be best for classification when hyperparameter number of neighbours are 60 and we get accuracy of KNN classifier as 0.79803\ 
 It seems like KNN is has a comparitively similar accuracy when compared with Logistic and DTC having 79% accuracy \
-Also, the area of curve for KNN has decreased to 71% fom 72% which is not too significant\
+Also, the area of curve for KNN has decreased to 71% fom 72% which is not too significant
 
 ## Random Forest Classifier 
 When we use the Random Forest classifier model we see that that the accuracy is at 68% which is comprartivly very less with regards ro logistic regression and Decesion tree. Hence this is not the correct mode that should be used on this data set for our analysis.\
-With the ROC curve we can see that the area under it is 0.6951 which is less compared to other models we have seen above.\
+With the ROC curve we can see that the area under it is 0.6951 which is less compared to other models we have seen above.
 
 # Conclusion 
 From the above analysis we can see that both Logistic regression and decesion tree classifiers are best suited for our dateset and our target variable.\
